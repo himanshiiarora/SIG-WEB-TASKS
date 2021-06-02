@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<header>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+    </head>
+</header>
+<nav class="container" id="#navbar">
+    Home Decor
+    <a href="index.html">Home</a>
+    <a href="design.html">Designs</a>
+    <a href="about.html">About Us</a>
+</nav>
+<body>
+    <div class="container">
+        <h1 id="heading">About Our Work</h1>
+        <div id="aside">
+            <img src="images/disp.jpg" alt="">
+        </div>
+        <div class="para" id="para1">Buy online home decor items in India at the best prices. Our products
+             for Home decor keep in sync with the latest home decor trends. Lorem ipsum dolor sit 
+             amet consectetur adipisicing elit. Velit rem, et voluptatum ex excepturi 
+             distinctio debitis officiis voluptates accusantium, consequuntur a deserunt eaque.
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet 
+             consectetur, adipisicing elit. Tenetur corrupti eius nemo 
+             facilis laborum voluptate ea dolore voluptates. Officiis, fugiat.
+             Quasi dicta quia at! Quos error iure, accusantium nulla eaque maxime hic!</div>
+        <div class="para" id="para2">Our wide range of Home Decor items ranges from carpets, planters, cushion covers, 
+            bedsheets, figurines, wall art, paintings, limited edition photographs, home fragrances, throws,
+             storage boxes, stools, chairs, coffee tables, and more. Lorem ipsum dolor sit 
+             amet consectetur adipisicing elit. Vel ea blanditiis,
+              iste nulla dolorum, natus laudantium ipsam tenetur fugit laboriosam alias harum quas? 
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit 
+              amet consectetur adipisicing elit. Distinctio necessitatibus obcaecati 
+              impedit totam consequuntur neque iure esse. Aspernatur, quos dignissimos?
+              Architecto culpa omnis aliquid ullam similique, numquam nesciunt nostrum esse voluptate consequatur!</div>
+    </div>
+</body>
+<style>
+    body{
+        color: #FFFFFF;
+        background-image: linear-gradient(to right, #000000, #cc5868 90%);
+        border-top: 20px double #000000;
+        border-bottom: 20px double #000000;
+        border-right: 20px double #000000;
+        border-left: 20px double #E7EBDD;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    .container{
+        display: grid;
+        grid-gap: 0.4rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'heading heading heading heading'
+        'para1 para1 aside aside'
+        'para2 para2 aside aside' ;
+    }
+    #para1{
+        grid-area: para1;
+    }
+    #para2{
+        grid-area: para2;
+    }
+    #aside{
+        grid-area: aside;
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #heading{
+        grid-area: heading;
+    }
+    h1{
+        font-family: Showcard Gothic;
+        font-size: 40px;
+        color: #000000;
+        text-align: center;
+    }
+    .para{
+        font-size: 1.4em;
+        text-align: left;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #ffffff;
+    }
+    nav{
+        background-color: #000000;
+        color: #ffffff;
+        display: grid;
+        margin: 3px;
+        padding: 5px;
+        font-size: 3.5em;
+        font-family: forte, Cochin, Georgia, Times, 'Times New Roman', serif;
+	    /*font-variant: small-caps;*/
+	    text-shadow: 3px 2px 0px #cc5868;
+        border: 3px solid black;
+        align-items: center;
+        border-radius: 15px;
+    }
+    nav a{
+        margin: 2px;
+        padding: 4px;
+        text-decoration: none;
+        font-size: 0.4em;
+        color: #ffffff;
+        float: right;
+        font-family: cursive;
+	    text-shadow: 0px 0px 0px;
+    }
+    nav a:hover, nav a:focus{
+        border: 3px groove #ffffff;
+        border-radius: 3px;
+    }
+    img{
+        height: 80vh;
+        border: 3px solid #000000;
+    }
+    @media only screen and (max-width: 700px){
+        .container{
+            display: grid;
+            grid-gap: 0.4rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'heading heading heading heading'
+            'aside aside aside aside'
+            'para1 para1 para1 para1'
+            'para2 para2 para2 para2';
+        }
+        h1, .para{
+            text-align: center;
+        }
+    }
+    @media only screen and (min-width: 700px) and (max-width: 1000px){
+        .container{
+            display: grid;
+            grid-gap: 0.4rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'heading heading heading heading'
+            'aside aside aside aside'
+            'para1 para1 para1 para1'
+            'para2 para2 para2 para2' ;
+        }
+        img{
+            width: 76vw;
+        }
+        .para{
+            text-align: center;
+        }
+    }
+</style>
+</html>

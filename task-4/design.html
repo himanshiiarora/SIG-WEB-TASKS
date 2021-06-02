@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<header>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Designs</title>
+    </head>
+</header>
+<nav>
+    Home Decor
+    <a href="index.html" >Home</a>
+    <a href="design.html">Designs</a>
+    <a href="about.html">About Us</a>
+    <a href="#">Blog</a>
+</nav>
+<body>
+    <h1>Designs</h1>
+    <h2>Presenting some sample designs</h2>
+    <div class="container">
+        <img src="images/r1.jpg" alt="">
+        <img src="images/r2.jpg" alt="">
+        <img src="images/r3.jpg" alt="">
+        <img src="images/r4.jpg" alt="">
+        <img src="images/r5.jpg" alt="">
+        <img src="images/s1.jpg" alt="">
+        <img src="images/s2.jpg" alt="">
+        <img src="images/s3.jpg" alt="">
+        <img src="images/s5.jpg" alt="">
+        <img src="images/s4.jpg" alt="">
+        <img src="images/stair1.jpg" alt="">
+        <img src="images/stair2.jpg" alt="">
+        <img src="images/stair3.jpg" alt="">
+        <img src="images/stair4.jpg" alt="">
+        <img src="images/stair5.jpg" alt="">
+    </div>
+</body>
+<style>
+    body{
+        color: #FFFFFF;
+        background-image: linear-gradient(to right, #000000, #cc5868 90%);
+        border-top: 20px double #000000;
+        border-bottom: 20px double #000000;
+        border-right: 20px double #000000;
+        border-left: 20px double #E7EBDD;
+        margin: 10px;
+        padding: 10px;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-items: stretch;
+    }
+    h1{
+        font-family: Showcard Gothic;
+        font-size: 40px;
+        color: #000000;
+        text-align: center;
+    }
+    h2{
+        font-family: Ink Free;
+        text-align: center;
+        color: #000000;
+    }
+    nav{
+        background-color: #000000;
+        color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3px;
+        padding: 5px;
+        font-size: 3.5em;
+        font-family: forte, Cochin, Georgia, Times, 'Times New Roman', serif;
+	    /*font-variant: small-caps;*/
+	    text-shadow: 3px 2px 0px #cc5868;
+        border: 3px solid black;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 15px;
+    }
+    nav a{
+        margin: 2px;
+        padding: 4px;
+        text-decoration: none;
+        flex-wrap: wrap;
+        font-size: 0.4em;
+        color: #ffffff;
+        float: right;
+        font-family: cursive;
+	    text-shadow: 0px 0px 0px;
+    }
+    nav a:hover, nav a:focus{
+        border: 3px groove #ffffff;
+        border-radius: 3px;
+    }
+    img{
+        width: 20em;
+        height: 25em;
+        margin: 5px;
+        padding: 4px;
+        border: 2.5px solid black;
+    }
+    img:hover{
+        transform: scale(1.2);
+    }
+</style>
+</html>

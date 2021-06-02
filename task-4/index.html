@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<header>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Decor</title>
+    </head>
+</header>
+<nav class="c1" id="#navbar">
+    Home Decor
+    <a href="index.html" >Home</a>
+    <a href="design.html">Designs</a>
+    <a href="about.html" >About Us</a>
+    <a href="#">Blog</a>
+</nav>
+<body>
+    <div class="c1">
+
+        <h1 id="heading">Turning imaginations into reality! <br> 
+            Decorate your home with <br> a high quality <br> furniture available <br>at Home decor!
+            <br><br><br> <span>working since  <br> 1995</span></h1>
+            <div id="section1">Lorem ipsum carrots enhanced rebates. We shall have to follow any of these,
+                 but the discomfort. Any one would think a lot of pain, we must admit, and easily found 
+                 annoyances they have less of accusing deleniti to choose the pleasures of this world and 
+                 that which I have the advantage of being that by which troubled him the most! To obtain 
+                 the right to labor, toil, and pain was that he should either Neither, because they Kat 
+                 stacks of life, some we may be able to choose, they deserted the general words of the
+                  great pleasure to present the most worthy of great pain? In a like to be well pleasing
+                 in his at once take, and on, the right of, the times of encounter and pain, but they might be 
+                 Blessed. The trouble of them repel accuse, indeed, often pain, from which the nature of the 
+                 choice of which of these to the with pleasure! This hate is born inventor and so on some happy?
+                 Whom they did flee from a true affinity with the obligations it undertakes at the time, our ancestors 
+                 did not encounter the flight of the right of rejecting some of the truth, that I may by a like method 
+                 will occur, no one to carry messages of life.</div>
+                <div id="aside1">
+                    <img src="images/dec5_min.jpg" width="100%" alt="">
+                </div>
+                <div id="section2">
+                    So great, criticized for pain but an architect? For that will present the truth?
+                It was like a choice. Often in flight, no one escaped to him, The thing that took place on the pleasures 
+                of the pain was the pain of this man, whence he is called a regular of the truth, a great choice of mode, therefore
+                , of them deal corruptly. Be pleasing to Him, I will open the error of which we may be able itself of the body 
+                at all? A, are incident to the needs of these symptoms are accusing him of them, indeed, nothing of the consequences 
+                of the labor of my labors, as it were, of it was of extremely seeks that, of the truth, or easy to be accepted, and 
+                the result will be, advantage, but the means whereby they are to carry messages. By a similar they are, 
+                the times of the city, both for some of the things, enhanced the pleasure of pleasures, and larger ones 
+                provident a cause? It receives the fall and, the desire to praise with canticles, the master builder pain 
+                is a blessed thing to be cast.But the just seek his own to follow, or any fault, all
+                deleniti is disgraceful cowardice, it is easy to carry messages that are in the time of some of the 
+                debts, to the exercise of the duties of that in the explication thereof because they need any 
+                unmarried woman.
+                </div>
+                <div id="aside2">
+                    <img src="images/dec4.jpg" width="100%" alt="">
+                </div>
+        <footer id="footer">
+            Contact us at: 9999555522,9999555523, 
+            <a href="">homedecor123@gmail.com</a><br>
+            <a href="">homedecor_beauty</a> at instagram  and 
+            <a href="">HomeDecor</a> at facebook <br>
+        </footer>
+    </div>
+</body>
+<style>
+    body{
+        background-color: black;
+        background-image: linear-gradient(to right, #000000, #cc5868 90%);
+        color: #ffffff;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        scroll-behavior: smooth;
+    }
+    .c1{
+        display: grid;
+        grid-gap: 0.4rem;
+        grid-template-areas: 
+        'navbar navbar navbar'
+        'heading heading heading'
+        'section1 section1 aside1'
+        'aside2 section2 section2' 
+        'footer footer footer';
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #heading{
+        grid-area: heading;
+    }
+    #aside1{
+        grid-area: aside1;
+    }
+    #section1{
+        grid-area: section1;
+        font-size: 1em;
+        margin: 3px;
+        padding: 14px;
+        text-align: left;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    #aside2{
+        grid-area: aside2;
+    }
+    #section2{
+        grid-area: section2;
+        color: #ffffff;
+        font-size: 1em;
+        margin: 3px;
+        padding: 14px;
+        text-align: right;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    #footer{
+        grid-area: footer;
+    }
+    img{
+        border: 2.5px solid black;
+    }
+    h1{
+        /*background-image: url("images/dec5_blur.jpg");*/
+        font-family: Showcard Gothic;
+        font-size: 40px;
+        color: #000000;
+        text-align: center;
+    }
+    nav{
+        background-color: #000000;
+        display: grid;
+        grid-template-columns: 1.6fr 0.74fr 0.74fr 0.74fr 0.74fr;
+        margin: 3px;
+        padding: 4px;
+        font-size: 3.5em;
+        text-shadow: 3px 2px 0px #cc5868;
+        font-family: forte, Cochin, Georgia, Times, 'Times New Roman', serif;
+	    /*font-variant: small-caps;*/
+        border: 3px solid black;
+        align-items: center;
+        opacity: 0.7;
+    }
+    nav:hover, nav:focus{
+        opacity: 1;
+        border-radius: 15px;
+    }
+    nav a{
+        margin: 2px;
+        padding: 4px;
+        text-decoration: none;
+        font-size: 0.4em;
+        color: #ffffff;
+        float: right;
+        font-family: cursive;
+        text-align: center;
+	    text-shadow: 0px 0px 0px;
+    }
+    nav a:hover, nav a:focus{
+        border: 3px groove #ffffff;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    footer{
+        text-align: center;
+        background-color: #000000;
+        font-size: 25px;
+        padding: 5px;
+    }
+    footer a{
+        color: #cc5868;
+        text-decoration: none;
+    }
+    span{
+        text-shadow: 3px 2px 0px #cc5868;
+    }
+    @media only screen and (max-width: 700px){
+        .c1{
+            display: grid;
+            grid-gap: 0.4rem;
+            grid-template-areas: 
+            'navbar navbar navbar'
+            'heading heading heading'
+            'aside1 aside1 aside1'
+            'section1 section1 section1'
+            'aside2 aside2 aside2'
+            'section2 section2 section2' 
+            'footer footer footer';
+        }
+        #section1, #section2{
+            text-align: center;
+        }
+    }
+    @media only screen and (min-width: 700px) and (max-width: 1200px){
+        .c1{
+            display: grid;
+            grid-gap: 0.4rem;
+            grid-template-areas: 
+            'navbar navbar navbar'
+            'heading heading heading'
+            'aside1 aside1 aside1'
+            'section1 section1 section1'
+            'aside2 aside2 aside2'
+            'section2 section2 section2' 
+            'footer footer footer';
+        }
+        #section1, #section2{
+            text-align: center;
+        }
+    }
+</style>
+</html>
