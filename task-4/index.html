@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Decor</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     </head>
 </header>
@@ -175,24 +176,6 @@
             display: grid;
             grid-gap: 0.4rem;
             grid-template-areas: 
-            'navbar navbar navbar'
-            'heading heading heading'
-            'aside1 aside1 aside1'
-            'section1 section1 section1'
-            'aside2 aside2 aside2'
-            'section2 section2 section2' 
-            'footer footer footer';
-        }
-        #section1, #section2{
-            text-align: center;
-        }
-    }
-    @media only screen and (min-width: 700px) and (max-width: 1200px){
-        .c1{
-            display: grid;
-            grid-gap: 0.4rem;
-            grid-template-areas: 
-            'navbar navbar navbar'
             'heading heading heading'
             'aside1 aside1 aside1'
             'section1 section1 section1'
@@ -205,6 +188,22 @@
         }
         h1{
             text-shadow: 3px 2px 0px #ffffff;
+        }
+    }
+    @media only screen and (min-width: 700px) and (max-width: 1200px){
+        .c1{
+            display: grid;
+            grid-gap: 0.4rem;
+            grid-template-areas: 
+            'heading heading heading'
+            'aside1 aside1 aside1'
+            'section1 section1 section1'
+            'aside2 aside2 aside2'
+            'section2 section2 section2' 
+            'footer footer footer';
+        }
+        #section1, #section2{
+            text-align: center;
         }
     }
 </style>
