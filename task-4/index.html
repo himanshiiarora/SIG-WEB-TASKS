@@ -5,9 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Decor</title>
+        <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     </head>
 </header>
-<nav class="c1" id="#navbar">
+<nav>
     Home Decor
     <a href="index.html" >Home</a>
     <a href="design.html">Designs</a>
@@ -75,14 +76,10 @@
         display: grid;
         grid-gap: 0.4rem;
         grid-template-areas: 
-        'navbar navbar navbar'
         'heading heading heading'
         'section1 section1 aside1'
         'aside2 section2 section2' 
         'footer footer footer';
-    }
-    #navbar{
-        grid-area: navbar;
     }
     #heading{
         grid-area: heading;
@@ -118,23 +115,26 @@
     }
     h1{
         /*background-image: url("images/dec5_blur.jpg");*/
-        font-family: Showcard Gothic;
+        /*font-family: Showcard Gothic;*/
+        font-family: 'Sigmar One', cursive;
         font-size: 40px;
         color: #000000;
         text-align: center;
     }
     nav{
         background-color: #000000;
-        display: grid;
-        grid-template-columns: 1.6fr 0.74fr 0.74fr 0.74fr 0.74fr;
+        color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
         margin: 3px;
-        padding: 4px;
+        padding: 5px;
         font-size: 3.5em;
-        text-shadow: 3px 2px 0px #cc5868;
         font-family: forte, Cochin, Georgia, Times, 'Times New Roman', serif;
 	    /*font-variant: small-caps;*/
+	    text-shadow: 3px 2px 0px #cc5868;
         border: 3px solid black;
         align-items: center;
+        justify-content: space-around;
         opacity: 0.7;
     }
     nav:hover, nav:focus{
@@ -202,6 +202,9 @@
         }
         #section1, #section2{
             text-align: center;
+        }
+        h1{
+            text-shadow: 3px 2px 0px #ffffff;
         }
     }
 </style>
