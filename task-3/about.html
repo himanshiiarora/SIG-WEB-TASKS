@@ -3,8 +3,6 @@
     <head lang="en">
         <meta charset="UTF-8">
         <title>Designs</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     </head>
 </header>
 <nav>
@@ -12,31 +10,16 @@
     <a href="index.html">Home</a>
     <a href="design.html">Designs</a>
     <a href="about.html">About Us</a>
+    <a href="#">Blog</a>
 </nav>
 <body>
     <h1>About Our Work</h1>
-    <div class="container">
-        <div id="aside">
-            <img src="images/disp.jpg" alt="">
-        </div>
-        <div class="para" id="para1">Buy online home decor items in India at the best prices. Our products
-             for Home decor keep in sync with the latest home decor trends. Lorem ipsum dolor sit 
-             amet consectetur adipisicing elit. Velit rem, et voluptatum ex excepturi 
-             distinctio debitis officiis voluptates accusantium, consequuntur a deserunt eaque.
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet 
-             consectetur, adipisicing elit. Tenetur corrupti eius nemo 
-             facilis laborum voluptate ea dolore voluptates. Officiis, fugiat.
-             Quasi dicta quia at! Quos error iure, accusantium nulla eaque maxime hic!</div>
-        <div class="para" id="para2">Our wide range of Home Decor items ranges from carpets, planters, cushion covers, 
-            bedsheets, figurines, wall art, paintings, limited edition photographs, home fragrances, throws,
-             storage boxes, stools, chairs, coffee tables, and more. Lorem ipsum dolor sit 
-             amet consectetur adipisicing elit. Vel ea blanditiis,
-              iste nulla dolorum, natus laudantium ipsam tenetur fugit laboriosam alias harum quas? 
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit 
-              amet consectetur adipisicing elit. Distinctio necessitatibus obcaecati 
-              impedit totam consequuntur neque iure esse. Aspernatur, quos dignissimos?
-              Architecto culpa omnis aliquid ullam similique, numquam nesciunt nostrum esse voluptate consequatur!</div>
-    </div>
+    <img src="images/disp.jpg" alt="">
+    <div class="para">Buy online home decor items in India at the best prices. Our products
+         for Home decor keep in sync with the latest home decor trends.</div>
+    <div class="para">Our wide range of Home Decor items ranges from carpets, planters, cushion covers, 
+        bedsheets, figurines, wall art, paintings, limited edition photographs, home fragrances, throws,
+         storage boxes, stools, chairs, coffee tables, and more.</div>
 </body>
 <style>
     body{
@@ -50,31 +33,20 @@
         padding: 10px;
         text-align: center;
     }
-    .container{
-        display: grid;
-        grid-gap: 0.4rem;
-        grid-template-areas: 
-        'para1 para1 aside aside'
-        'para2 para2 aside aside' ;
-    }
-    #para1{
-        grid-area: para1;
-    }
-    #para2{
-        grid-area: para2;
-    }
-    #aside{
-        grid-area: aside;
-    }
     h1{
-        font-family: 'Sigmar One', cursive;
+        font-family: Showcard Gothic;
         font-size: 40px;
         color: #000000;
         text-align: center;
     }
     .para{
+        display: flex;
+        align-items: stretch;
+        /*flex-wrap: wrap;*/
         font-size: 1.4em;
-        text-align: left;
+        width: 40vw;
+        height: 40vh;
+        text-align: center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: #ffffff;
     }
@@ -92,7 +64,7 @@
         border: 3px solid black;
         align-items: center;
         justify-content: space-around;
-        border-radius: 15px;
+        border-radius: 5px;
     }
     nav a{
         margin: 2px;
@@ -110,43 +82,10 @@
         border-radius: 3px;
     }
     img{
-        height: 70vh;
+        float: right;
+        width: 43%;
+        height: 80vh;
         border: 3px solid #000000;
-    }
-    @media only screen and (max-width: 700px){
-        .container{
-            display: grid;
-            grid-gap: 0.4rem;
-            grid-template-areas: 
-            'aside aside aside aside'
-            'para1 para1 para1 para1'
-            'para2 para2 para2 para2';
-        }
-        h1, .para{
-            text-align: center;
-        }
-        img{
-            width: 16em;
-        }
-        #para1{
-            font-size: 1em;
-        }
-        #para2{
-            font-size: 1em;
-        }
-    }
-    @media only screen and (min-width: 700px) and (max-width: 1000px){
-        .container{
-            display: grid;
-            grid-gap: 0.4rem;
-            grid-template-areas: 
-            'aside aside aside aside'
-            'para1 para1 para1 para1'
-            'para2 para2 para2 para2' ;
-        }
-        .para{
-            text-align: center;
-        }
     }
 </style>
 </html>
