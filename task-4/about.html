@@ -43,7 +43,8 @@
 <style>
     body{
         color: #FFFFFF;
-        background-image: linear-gradient(to right, #000000, #cc5868 90%);
+        /*background-image: linear-gradient(to right, #000000, #cc5868 90%);*/
+        background-image: linear-gradient(to right, #000000, cadetblue 90%);
         border-top: 20px double #000000;
         border-bottom: 20px double #000000;
         border-right: 20px double #000000;
@@ -91,26 +92,31 @@
         font-size: 3.5em;
         font-family: forte, Cochin, Georgia, Times, 'Times New Roman', serif;
 	    /*font-variant: small-caps;*/
-	    text-shadow: 3px 2px 0px #cc5868;
+	    text-shadow: 3px 2px 0px cadetblue;
         border: 3px solid black;
         align-items: center;
         justify-content: space-around;
+        opacity: 0.7;
+    }
+    nav:hover, nav:focus{
+        opacity: 1;
         border-radius: 15px;
     }
     nav a{
         margin: 2px;
-        padding: 4px;
+        padding: 5px;
         text-decoration: none;
-        flex-wrap: wrap;
         font-size: 0.4em;
         color: #ffffff;
         float: right;
-        font-family: cursive;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
 	    text-shadow: 0px 0px 0px;
     }
     nav a:hover, nav a:focus{
-        border: 3px groove #ffffff;
+        border: 1px groove #ffffff;
         border-radius: 3px;
+        cursor: pointer;
     }
     img{
         height: 80vh;
@@ -136,6 +142,9 @@
         }
         #para2{
             font-size: 1em;
+        }
+        nav{
+            opacity: 1;
         }
     }
     @media only screen and (min-width: 700px) and (max-width: 1000px){
