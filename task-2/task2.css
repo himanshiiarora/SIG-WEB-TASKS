@@ -1,0 +1,28 @@
+body{
+	margin: 5px;
+	padding: 10px;
+	color: #ffffff;
+	background-color: #000000;
+	border: 10px double #BF846D /* very light shade of purple*/;
+	font-family: Cambria;
+}
+h1{
+	padding: 6px;
+	font-size: 50px;
+	text-align: center;
+	font-family: Cambria;
+	font-variant: small-caps;
+	color: #000000;
+	background-color: #BF846D;
+}
+h2{
+	font-family: Cambria;
+	padding: 3px;
+}
+img{
+	float: right;
+	border: 3px solid #DBC3FF;
+}
+span{
+	font-family: forte;
+}
